@@ -48,10 +48,10 @@ print("Greatest Decrease in Profits: "+ str(months[avg_change.index(min(avg_chan
 
 file = open("output.txt", "r+")
 file.write("Financial Analysis")
-file.write("---------------------------------------------------------")
-file.write("Total Months: " + str(t_months))
-file.write("Total: $" + str(t_revenue))
-file.write("Average Change: $" + str(r_avg))
-file.write("Greatest Increase in profits: " + str(months[avg_change.index(max(avg_change)) + 1]) + " ($" + str(max_increase) +")")
-file.write("Greatest Decrease in Profits: "+ str(months[avg_change.index(min(avg_change)) + 1]) + " ($" + str(max_decrease) + ")")
-file.close
+file.write("\n---------------------------------------------------------")
+file.write("\nTotal Months: " + str(t_months))
+file.write("\nTotal: $" + str(t_revenue))
+file.write("\nAverage Change: $" + str(r_avg))
+file.write("\nGreatest Increase in profits: " + str(months[avg_change.index(max(avg_change)) + 1]) + " ($" + str(max_increase) +")")
+file.write("\nGreatest Decrease in Profits: "+ str(months[avg_change.index(min(avg_change)) + 1]) + " ($" + str(max_decrease) + ")")
+file.close()
